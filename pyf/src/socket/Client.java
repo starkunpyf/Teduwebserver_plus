@@ -9,7 +9,7 @@ public class Client {
     public Client(){
         try {
             System.out.println("正在连接服务端");
-            socket = new Socket("localhost",8088);//127.0.0.1,176.17.2.29
+            socket = new Socket("176.17.2.29",8088);//127.0.0.1,176.17.2.29
             System.out.println("与服务端建立链接");
         } catch (IOException e) {
             e.printStackTrace();
