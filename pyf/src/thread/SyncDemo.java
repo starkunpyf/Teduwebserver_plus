@@ -29,7 +29,7 @@ public class SyncDemo {
 class Table{
     private int beans = 20;//桌子上有20个豆子
 
-    public int getBean(){
+    public synchronized int getBean(){
         if(beans==0){//桌子上没有豆子了!
             throw new RuntimeException("没有豆子了!");
         }
